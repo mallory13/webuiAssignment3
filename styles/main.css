@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("styles/reset.css");
+@import url("styles/normalize.css");
+
+
+
+/*768px and up*/
+/*@media only screen and (min-width: 480px){*/
+html {
+		background: #ccc url("images/mountain.png") no-repeat top left;
+		background-size: cover;	
+		background-attachment: fixed;
+		height: 100%;
+        display: block;
+        position: relative;
+	}
+    
+    body {
+		min-height: 100%;	
+		font-family: "Century Gothic", Futura, Helvetica, Arial, sans-serif;
+        color: #333;		
+	}
+
+
+header {
+	padding: 1em;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(73, 69, 96, 0.1);
+}
+
+h1{
+    color: #2B6573;
+    text-shadow: 2px -3px 5px black;
+    font-size: 4.5em;
+    
+}
+
+header p{
+    font-size: 2em;
+    color: oldlace;
+}
+
+nav{
+    position: fixed;
+  right: 30%;
+  top: 0;
+  /*top: 50%;
+  width: 8em;
+  margin-top: -2.5em;*/
+}
+
+ul li{
+    list-style-type: none;
+}
+.dropbtn {
+    background-color: #2B6573;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 25px;
+    color: oldlace;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px #999;
+    top: -3px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 25px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: lightseagreen;
+}
+
+
+
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+main section {
+	width: 20%;
+	padding: 0.5em;
+	background-color: rgb(255,255,255);
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9d2d6+2,8e9b9e+54,333333+100 */
+background: rgb(201,210,214); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(201,210,214,1) 2%, rgba(142,155,158,1) 54%, rgba(51,51,51,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(201,210,214,1) 2%,rgba(142,155,158,1) 54%,rgba(51,51,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(201,210,214,1) 2%,rgba(142,155,158,1) 54%,rgba(51,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9d2d6', endColorstr='#333333',GradientType=1 ); /* IE6-9 */
+
+
+	box-shadow: 0px 7px 15px 5px rgba(0,0,0,0.1); 
+    
+    -moz-border-radius-topright: 50px;
+    -moz-border-top-right-radius: 50px;
+    -webkit-border-top-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+main section h2 {
+	margin: 0;
+}
+main section h3 {
+	margin: 0;
+	font-size: 110%;
+    font-weight: bold;
+}
+
+main section h4{
+    font-weight: bold;
+}
+
+main section div {
+	margin-top: 0.5em;
+	padding: 0.5em;
+	color: rgb(255,255,255);
+	background-color: grey;
+	height: 3em;
+}
+
+.pullquote2 {
+    display: block;
+    float: right;
+    padding: 0 0 0 5px;
+    margin: 0 0 5px 5px;
+    width: 30%;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: right;
+    color: #333;
+    border-left: 3px solid #ccc;
+}
+/* STEP 5 - leading quotation marks */
+.pullquote2:before {
+    display: block;
+    content: "\201C";
+    font-size: 1em;
+    float: left;
+    position: relative;
+    top: -0.2em;
+    color: #333;
+    
+}
+            
+.pullquote2:after {
+    display: block;
+    content: "\201D";
+    font-size: 1em;
+    float: right;
+    position: relative;
+    top: -0.2em;
+    color: #333;
+    
+}
+
+img{
+    opacity: 0.5;
+}
+
+
+footer{
+    height: 5px;
+    width: 100%;
+    padding: 1em;
+}
+small {
+    clear: both;
+    background-color: #2B6573;
+    text-align: center;
+    height: 20px;
+    position: fixed;
+    width:100%;
+    left:-2px;
+    bottom:0px;
+    color: oldlace;
+    
+
+}
+/*}*/
+
+/*media queries*/
+
+ /*smart watch*/
+        /*@media(max-device-width: 50mm){
+            body{
+                font-size: 80%;
+                background: red;
+            }
+        }*/
+		
+		/* 320px and up
+		----------------------------------- */
+        /*@media only screen and (min-width: 320px){*/
+            
+            /*change size of images*/
+            /*img{
+                height: 125px;
+                widows: 120px;
+            }*/
+            /*change size of h1, h2, h3*/
+            /*h1{
+                font-size: 2em;
+            }
+            h2{
+                font-size: 1.5em;
+            }
+            h3{
+                font-size: 1em;
+            }
+            section p{
+                font-size: 0.5em;
+            }*/
+            
+            /*2 section per row*/
+            /*#resrow{
+                display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+            }
+            
+            section{
+                padding-top: 10px;
+            }*/
+            
+            /*change nav to hamburger menu*/
+            .box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+        /*}*/
+
+
+
+	
